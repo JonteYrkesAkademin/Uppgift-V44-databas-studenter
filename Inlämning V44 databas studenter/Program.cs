@@ -4,8 +4,6 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-
             StudentInfoList studentInfoList = new StudentInfoList();
             studentInfoList.menu.WriteMenu();
 

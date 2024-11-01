@@ -47,6 +47,7 @@ namespace Inlämning_V44_databas_studenter
                     CreateNewStudentMenu();
                     break;
                 case 2:
+                    ShowAllStudentsMenu();
                     ChangeStudentInfoMenu();
                     break;
                 case 3:
@@ -91,7 +92,8 @@ namespace Inlämning_V44_databas_studenter
 
         public void ShowAllStudentsMenu()
         {
-            Console.WriteLine("Här kommer en lista med alla studenter som finns registrerade:\n");
+            Console.WriteLine("Här kommer en lista med alla studenter som finns registrerade:");
+
             studentInfoList.ShowAllStudents();
         }
     }

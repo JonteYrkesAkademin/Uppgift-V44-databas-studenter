@@ -19,7 +19,7 @@ namespace Inlämning_V44_databas_studenter
 
         public override string? ToString()
         {
-            return $"StudentID: {StudentId.ToString().PadLeft(5).PadRight(5)} Förnamn: {FirstName.ToString().PadLeft(5).PadRight(5)} Efternamn: {LastName.ToString().PadLeft(5).PadRight(5)} Stad: {City.ToString().PadLeft(5).PadRight(5)}\n";
+            return $"{StudentId.ToString().PadRight(5)} {FirstName.PadRight(15)} {LastName.PadRight(15)} {City.PadRight(10)}";
         }
     }
 }

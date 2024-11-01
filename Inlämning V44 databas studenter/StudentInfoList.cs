@@ -47,7 +47,12 @@ namespace Inlämning_V44_databas_studenter
         }
 
         public void ShowAllStudents()
-        { 
+        {
+            Console.WriteLine("Registrerade studenter:");
+            Console.WriteLine(new string('-', 50));
+            Console.WriteLine($"{"ID".PadRight(5)} {"Förnamn".PadRight(15)} {"Efternamn".PadRight(15)} {"Stad".PadRight(10)}");
+            Console.WriteLine(new string('-', 50));
+
             foreach (var student in dbCtx.Students)
             {
                 Console.WriteLine(student.ToString());
