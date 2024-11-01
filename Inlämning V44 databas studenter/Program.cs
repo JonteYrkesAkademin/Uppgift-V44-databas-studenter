@@ -6,6 +6,9 @@
         {
             Console.WriteLine("Hello, World!");
 
+            StudentInfoList studentInfoList = new StudentInfoList();
+            studentInfoList.menu.WriteMenu();
+
             //Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StudentsV44;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False
         }
     }

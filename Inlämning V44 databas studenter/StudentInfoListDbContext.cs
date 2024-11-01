@@ -13,6 +13,8 @@ namespace Inlämning_V44_databas_studenter
 
         public DbSet<Student> Students {  get; set; }
 
+        public StudentInfoListDbContext() { }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(connectionString);

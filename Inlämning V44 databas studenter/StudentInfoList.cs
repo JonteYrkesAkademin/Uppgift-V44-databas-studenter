@@ -8,9 +8,7 @@ namespace Inlämning_V44_databas_studenter
 {
     internal class StudentInfoList
     {
-        private Menu menu;
-
-        int newStudentId = 1;
+        public Menu menu { get; set; }
 
         public StudentInfoList()
         {
@@ -45,6 +43,14 @@ namespace Inlämning_V44_databas_studenter
             else
             {
                 Console.WriteLine("Studenten kunde inte hittas.");
+            }
+        }
+
+        public void ShowAllStudents()
+        { 
+            foreach (var student in dbCtx.Students)
+            {
+                Console.WriteLine(student.ToString());
             }
         }
 
